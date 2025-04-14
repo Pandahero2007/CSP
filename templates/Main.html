@@ -2,30 +2,34 @@
 {% block title %} G-Forces Effect On The Body {% endblock %}
 {% block body %}
     <p><br></p>
-    <article style="background-color: #FFb74d"><h2 style="color: black; text-align: center">G-Forces are utilized in a variety of different sports and science, this CSP aims to help groups study the effects of g-forces on bodies during these activities.</h2></article>
+
+        <p style="font-size: 16px; text-align: center">
+    <i>G-Forces are utilized in a variety of different sports and science, this CSP aims to help groups study the effects of g-forces on bodies during these activities.</i>
+    </p>
     <div class="grid">
     <div class="imgHolder">
-        <img src="{{url_for('static', filename='Imgs/Rocket.gif')}}" alt="Roach on rocket" style="object-fit: cover; height: 100%">
+        <img src="{{url_for('static', filename='Imgs/Rocket.gif')}}" alt="Roach on rocket" style="object-fit: cover; height: auto; width: 100%; border-style: double;border-width: medium;">
         <span>@pilomii</span>
     </div>
 <div>
     <h2 style="color: black">Objective and Global Issue</h2>
-    <blockquote>In a world of constantly moving and changing people, we yearn for ways to travel faster and better. The issue? G-forces. G-forces are what holds back the human body and other creatures from traveling and breakneck speeds. As it stands there is no way to get from Tokyo to New York in an hour&hellip; but what if there was? The objective of this CSP is to help students recognize the effects of G-forces on the human body, and to create and test an experiment to help conduct research on the effects of G-forces on insectoids. This research will help us in the future to research how cockroaches can withstand such high G-force, and to apply that knowledge to future research projects.
+
+    <blockquote>
+        In a world of constantly moving and changing people, we yearn for ways to travel faster and better. The issue? G-forces. G-forces are what holds back the human body and other creatures from traveling and breakneck speeds. As it stands there is no way to get from Tokyo to New York in an hour&hellip; but what if there was? The objective of this CSP is to help students recognize the effects of G-forces on the human body, and to create and test an experiment to help conduct research on the effects of G-forces on insectoids. This research will help us in the future to research how cockroaches can withstand such high G-force, and to apply that knowledge to future research projects.
 </blockquote>
     </div>
         </div>
 
 
 <style>
+
     .imgHolder {
         position: relative;
-        border-style: double;
-        border-width: medium;
     }
     .imgHolder span {
         position: absolute;
         left: 10px;
-        bottom: 10px;
+        top: 10px;
         font-size: 12px;
     }
     .imgHolder span a {
