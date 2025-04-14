@@ -1,23 +1,19 @@
 {% extends "Base.html" %}
 {% block title %} G-Forces Effect On The Body {% endblock %}
 {% block body %}
-    <p><strong>Timeline (2.5 Days):</strong></p>
-<p>Day One</p>
-<ul>
-<li>7:45-8:00) Gather the students and introduce the topic</li>
-</ul>
-<ul>
-<li>8:00-10:00) Research different effects of G-Forces on the body, as well as different rocket designs</li>
-</ul>
-<ul>
-<li>10:00-11:30) Begin work on data tables for data collection</li>
-<li>11:30-12:15) Eat lunch</li>
-</ul>
-<ul>
-<li>12:15-3:00) Create material list needed and design rockets</li>
-<li>3:00-3:15) Conclude for day and dismissal</li>
-</ul>
-<p>Day Two</p>
+    <div class="timeline">
+    <div class="time">
+        <h3>Day One</h3>
+        <ul>
+        <li>7:45-8:00) Gather the students and introduce the topic</li>
+        <li>8:00-10:00) Research different effects of G-Forces on the body, as well as different rocket designs</li>
+        <li>10:00-11:30) Begin work on data tables for data collection</li>
+        <li>11:30-12:15) Eat lunch</li>
+        <li>12:15-3:00) Create material list needed and design rockets</li>
+        <li>3:00-3:15) Conclude for day and dismissal</li>
+        </ul>
+    </div>
+        <div class="time"><h3>Day Two</h3>
 <ul>
 <li>7:45-8:00) Reintroduce project idea</li>
 <li>8:00-11:30) Split off into groups and begin building rockets with provided materials</li>
@@ -25,19 +21,65 @@
 <li>12:15-1:30) Finish building rockets and prepare them for presentation</li>
 <li>1:30-3:00) Strap cockroaches to rockets, launch rockets and record data</li>
 <li>3:00-3:15) Conclude for day and dismissal</li>
-</ul>
-<p>Day Three</p>
+</ul></div>
+    <div class="time"><h3>Day Three</h3>
 <ul>
 <li>7:45-8:00) Reintroduce project idea</li>
 <li>8:00-11:30) Dissect control roaches and record data</li>
 <li>11:30-12:15) Eat Lunch</li>
 <li>12:15-3:00) Rocket roach dissection and data collection</li>
 <li>3:00-4:00)&nbsp;</li>
-</ul>
-<ul>
 <li>4:00-4:25) Conclude CSP and dismissal</li>
-</ul>
-    <style>
+</ul></div>
+</div>
 
+
+
+    <style>
+    h3 {
+        color: black;
+    }
+body { font-family: Helvetica; }
+
+div.timeline {
+  width: 80%;
+  margin: auto;
+}
+
+div.time {
+
+  border-top: 4px dashed;
+  border-color: #f9a825 !important;
+  margin:0; padding: 30px;
+}
+
+
+
+div.time:nth-child(even) {
+  border-left: 4px dashed;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin-right: 30px;
+  padding-right: 0;
+}
+
+div.time:nth-child(odd) {
+  border-right: 4px dashed;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-left: 30px;
+  padding-left: 0;
+}
+
+div.time:first-child {
+  border-top: 0;
+  border-top-right-radius:0;
+  border-top-left-radius:0;
+}
+
+div.time:last-child {
+  border-bottom-right-radius:0;
+  border-bottom-left-radius:0;
+}
     </style>
 {% endblock %}
