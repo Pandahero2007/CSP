@@ -6,48 +6,55 @@
     <title>{% block title %}Django Boilerplate{% endblock title %}</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<link rel="icon" type="image/x-icon" href="../static/Imgs/10778186.ico">
+    <link rel="icon" type="image/x-icon" href="../static/Imgs/10778186.ico">
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
     >
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css"
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css"
     >
 
 </head>
 <body class="pico-color-amber-150">
-    <div style="border-bottom: 2px solid black; margin: auto 50px auto;">
-        <nav>
-          <ul>
+<div style="border-bottom: 2px solid black; margin: auto 50px auto;">
+    <nav>
+        <ul>
             <li><strong><a href="../" style="text-decoration: none">G-FORCES EFFECT ON THE BODY</a></strong></li>
-          </ul>
-          <ul>
+        </ul>
+        <ul>
             <li><a style="color: #000000;" href="/Timeline" class="contrast">Timeline</a></li>
             <li><a style="color: #000000;" href="/Materials" class="contrast">Materials/Budget</a></li>
             <li><a style="color: #000000;" href="/Connections" class="contrast">Connections</a></li>
-              <li><a style="color: #000000;" href="/Procedure" class="contrast">Procedure</a></li>
-              <li><a style="color: #000000;" href="/Deliverables" class="contrast">Deliverables</a></li>
-              <li><a href="https://docs.google.com/document/d/1JYIaKK7ti-BzZw03ueMwvU_VxrrzODHMmwkbZlJ2bgA/edit?usp=sharing" role="button">Doc</a></li>
-          </ul>
-        </nav>
-    </div>
+            <li><a style="color: #000000;" href="/Procedure" class="contrast">Procedure</a></li>
+            <li><a style="color: #000000;" href="/Deliverables" class="contrast">Deliverables</a></li>
+            <li>
+                <a href="https://docs.google.com/document/d/1JYIaKK7ti-BzZw03ueMwvU_VxrrzODHMmwkbZlJ2bgA/edit?usp=sharing"
+                   role="button">Doc</a></li>
+        </ul>
+    </nav>
+</div>
 
-    <main class="pico container" style="color: #000000;">
-        {% block body %}{% endblock body %}
-    </main>
+<main class="pico container" style="color: #000000;">
+    {% block body %}{% endblock body %}
+</main>
 </body>
 <style>
     nav, nav ul {
-	flex-direction: column;
-}
+        flex-direction: column;
+    }
 
-@media (min-width: 800px) {
-	nav, nav ul {
-		flex-direction: row;
-	}
-}
+    article {
+            background-color: #FFb74d
+        }
+
+    @media (min-width: 800px) {
+        nav, nav ul {
+            flex-direction: row;
+        }
+    }
+
     [data-theme=light],
     :root:not([data-theme=dark]),
     :host(:not([data-theme=dark])) {
