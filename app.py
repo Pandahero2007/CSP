@@ -23,5 +23,9 @@ def connections():  # put application's code here
 def sources():  # put application's code here
     return render_template("Procedure.html")
 
+@app.route('/Deliverables')
+def deliverables():
+    return render_template("Deliverables.html")
+
 if __name__ == '__main__':
     app.run()
