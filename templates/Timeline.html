@@ -19,7 +19,7 @@
         </div>
 
         <div class="connection">
-            <p>--</p>
+            <p style="user-select: none">--</p>
         </div>
         <div class="time">
             <article>
@@ -35,7 +35,7 @@
             </article>
         </div>
         <div class="connection">
-            <p>--</p>
+            <p style="user-select: none">--</p>
         </div>
         <div class="time">
             <article>
@@ -69,8 +69,14 @@
         }
 
         div.timeline {
-            width: 80%;
+            width: 100%;
             margin: auto;
+        }
+
+        @media (min-width: 800px) {
+            div.timeline {
+                width: 80%;
+            }
         }
 
     </style>
